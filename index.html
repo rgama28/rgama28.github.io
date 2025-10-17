@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Robert Gama</title>
+  <meta name="description" content="Second-Year Undergraduate Student at Claremont McKenna College · Career Interest in Consulting" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="/favicon.ico" />
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 700px; margin: 4rem auto; padding: 0 1rem; line-height: 1.6; }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    p { color: #444; }
-    a { color: #0d6efd; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    :root{ --bg:#ffffff; --fg:#0b0b0b; --muted:#60646c; --link:#0d0d0d; --border:#eceef2; }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0c0f; --fg:#f3f4f6; --muted:#a5acb5; --link:#f3f4f6; --border:#1e2230; }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
+    .wrap{min-height:100%; display:flex; align-items:center; justify-content:center;}
+    main{width:100%; max-width:760px; padding:48px 20px; text-align:center}
+    h1{font-weight:700; letter-spacing:.2px; font-size:clamp(34px,6vw,56px); margin:0 0 10px}
+    p.kicker{color:var(--muted); font-size:clamp(16px,2.2vw,18px); margin:0 auto 24px; max-width:720px}
+    nav{display:flex; gap:22px; align-items:center; justify-content:center; margin:26px 0 0}
+    .link{position:relative; text-decoration:none; color:var(--link); font-size:18px; padding:6px 2px}
+    .link::after{content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--border); transform:scaleX(0); transform-origin:left; transition:transform .25s ease}
+    .link:hover::after{transform:scaleX(1)}
+    footer{position:fixed; left:0; right:0; bottom:0; padding:14px; text-align:center; font-size:13px; color:var(--muted); background:linear-gradient(180deg, transparent, rgba(0,0,0,.00));}
+    .dot{padding:0 .4ch}
+    .sr{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
   </style>
 </head>
 <body>
-  <h1>Robert Gama</h1>
-  <p>Economics–Accounting student at Claremont McKenna College | Co-Founder of <strong>Cariño Botánica</strong></p>
-  <p>Focused on sustainability consulting, environmental impact, and equitable business solutions.</p>
-  <p><a href="mailto:robert@robertgama.com">robert@robertgama.com</a> | <a href="https://www.linkedin.com/in/robertgama" target="_blank">LinkedIn</a></p>
-  <p><a href="Robert-Gama-Resume.pdf" target="_blank">View My Resume (PDF)</a></p>
+  <div class="wrap">
+    <main>
+      <h1>Robert Gama</h1>
+      <p class="kicker">Second-Year Undergraduate Student at Claremont McKenna College<span class="dot">·</span>Career Interest in Consulting</p>
+      <nav aria-label="Primary">
+        <a class="link" href="mailto:rgama28@cmc.edu" title="Email Robert">Email</a>
+        <a class="link" href="https://www.linkedin.com/in/robertgamajr" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+      </nav>
+    </main>
+  </div>
+  <footer>© Robert Gama</footer>
 </body>
 </html>
