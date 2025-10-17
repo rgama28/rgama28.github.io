@@ -6,26 +6,122 @@
   <title>Robert Gama</title>
   <meta name="description" content="Second-Year Undergraduate Student at Claremont McKenna College · Career Interest in Consulting" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Minimal black heart favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖤</text></svg>">
+
   <style>
-    :root{ --bg:#ffffff; --fg:#0b0b0b; --muted:#60646c; --link:#0d0d0d; --border:#eceef2; }
-    @media (prefers-color-scheme: dark){
-      :root{ --bg:#0b0c0f; --fg:#f3f4f6; --muted:#a5acb5; --link:#f3f4f6; --border:#1e2230; }
+    :root {
+      --bg: #ffffff;
+      --fg: #0b0b0b;
+      --muted: #60646c;
+      --link: #0d0d0d;
+      --border: #eceef2;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";}
-    .wrap{min-height:100%; display:flex; align-items:center; justify-content:center;}
-    main{width:100%; max-width:760px; padding:48px 20px; text-align:center}
-    h1{font-weight:700; letter-spacing:.2px; font-size:clamp(34px,6vw,56px); margin:0 0 10px}
-    p.kicker{color:var(--muted); font-size:clamp(16px,2.2vw,18px); margin:0 auto 24px; max-width:720px}
-    nav{display:flex; gap:22px; align-items:center; justify-content:center; margin:26px 0 0}
-    .link{position:relative; text-decoration:none; color:var(--link); font-size:18px; padding:6px 2px}
-    .link::after{content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--border); transform:scaleX(0); transform-origin:left; transition:transform .25s ease}
-    .link:hover::after{transform:scaleX(1)}
-    footer{position:fixed; left:0; right:0; bottom:0; padding:14px; text-align:center; font-size:13px; color:var(--muted); background:linear-gradient(180deg, transparent, rgba(0,0,0,.00));}
-    .dot{padding:0 .4ch}
-    .sr{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0c0f;
+        --fg: #f3f4f6;
+        --muted: #a5acb5;
+        --link: #f3f4f6;
+        --border: #1e2230;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      animation: fadein 0.8s ease-out;
+    }
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      width: 100%;
+      max-width: 760px;
+      padding: 48px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-weight: 700;
+      letter-spacing: .2px;
+      font-size: clamp(34px, 6vw, 56px);
+      margin: 0 0 10px;
+    }
+    p.kicker {
+      color: var(--muted);
+      font-size: clamp(16px, 2.2vw, 18px);
+      margin: 0 auto 24px;
+      max-width: 720px;
+    }
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      justify-content: center;
+      margin: 26px 0 0;
+    }
+    .link {
+      position: relative;
+      text-decoration: none;
+      color: var(--link);
+      font-size: 18px;
+      padding: 6px 2px;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: var(--border);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .25s ease;
+    }
+    .link:hover::after {
+      transform: scaleX(1);
+    }
+    .link:hover {
+      transform: translateY(-2px);
+    }
+    footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 14px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,.00));
+    }
+    .dot {
+      padding: 0 .4ch;
+    }
+    .sr {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+    /* Fade-in animation */
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
