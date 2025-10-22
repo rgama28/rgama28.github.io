@@ -4,142 +4,216 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Robert Gama</title>
-  <meta name="description" content="Second-Year Undergraduate Student at Claremont McKenna College · Career Interest in Consulting" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Second-Year Undergraduate Student at Claremont McKenna College · Economics–Accounting · Claremont, California" />
+  <link rel="canonical" href="https://robertgama.com" />
 
-  <!-- Clean centered RG favicon -->
-  <link rel="icon" href="data:image/svg+xml,
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-    <rect width='100' height='100' fill='white'/>
-    <text x='50%' y='58%' font-size='56' text-anchor='middle' dominant-baseline='middle'
-      fill='black' font-family='Helvetica, Arial, sans-serif' font-weight='600'>RG</text>
-  </svg>?v=3">
+  <!-- Social (minimal + clean) -->
+  <meta property="og:title" content="Robert Gama" />
+  <meta property="og:description" content="Second-Year Undergraduate at CMC · Economics–Accounting · Based in Claremont, CA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://robertgama.com" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+
+  <!-- Favicon (reliable): place favicon.ico in repo root. Optional PNG fallbacks included. -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=8" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=8" />
 
   <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #0b0b0b;
-      --muted: #60646c;
-      --link: #0d0d0d;
-      --border: #eceef2;
+    /* ====== Design tokens ====== */
+    :root{
+      --bg:#ffffff; --fg:#0a0a0a; --muted:#646972; --card:#f6f7f8; --border:#e9ecf2; --soft:#f8f9fb; --link:#0a0a0a; --focus:#0a0a0a;
+      --max:1040px; --radius:18px; --space:24px; --header-h:64px;
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0b0c0f;
-        --fg: #f3f4f6;
-        --muted: #a5acb5;
-        --link: #f3f4f6;
-        --border: #1e2230;
-      }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0c0f; --fg:#f2f3f5; --muted:#a6acb4; --card:#10131a; --border:#1f2432; --soft:#0e1117; --link:#f2f3f5; --focus:#f2f3f5; }
     }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      animation: fadein 0.8s ease-out;
-    }
-    .wrap {
-      min-height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    main {
-      width: 100%;
-      max-width: 760px;
-      padding: 48px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-weight: 700;
-      letter-spacing: .2px;
-      font-size: clamp(34px, 6vw, 56px);
-      margin: 0 0 10px;
-    }
-    p.kicker {
-      color: var(--muted);
-      font-size: clamp(16px, 2.2vw, 18px);
-      margin: 0 auto 24px;
-      max-width: 720px;
-    }
-    nav {
-      display: flex;
-      gap: 22px;
-      align-items: center;
-      justify-content: center;
-      margin: 26px 0 0;
-    }
-    .link {
-      position: relative;
-      text-decoration: none;
-      color: var(--link);
-      font-size: 18px;
-      padding: 6px 2px;
-      transition: color 0.2s ease, transform 0.2s ease;
-    }
-    .link::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 1px;
-      background: var(--border);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .25s ease;
-    }
-    .link:hover::after {
-      transform: scaleX(1);
-    }
-    .link:hover {
-      transform: translateY(-2px);
-    }
-    footer {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 14px;
-      text-align: center;
-      font-size: 13px;
-      color: var(--muted);
-      background: linear-gradient(180deg, transparent, rgba(0,0,0,.00));
-    }
-    .dot {
-      padding: 0 .4ch;
-    }
-    .sr {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0,0,0,0);
-      border: 0;
-    }
-    /* Fade-in animation */
-    @keyframes fadein {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+
+    /* ====== Base ====== */
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; line-height:1.55}
+    img{max-width:100%; height:auto; display:block}
+    a{color:var(--link); text-decoration:none}
+    a:focus-visible, button:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:10px}
+    .visually-hidden{position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+
+    /* Reduced motion respect */
+    @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .animate{animation:none!important} }
+
+    /* ====== Layout ====== */
+    .container{max-width:var(--max); margin:0 auto; padding:var(--space)}
+    header{position:sticky; top:0; z-index:20; border-bottom:1px solid var(--border); backdrop-filter:saturate(160%) blur(8px); background:color-mix(in oklab, var(--bg) 82%, transparent); height:var(--header-h)}
+    nav{display:flex; align-items:center; justify-content:space-between; gap:16px; height:100%}
+    .brand{font-weight:700; letter-spacing:.3px}
+    .tabs{display:flex; gap:10px}
+    .tab{padding:10px 12px; border-radius:12px; color:var(--muted)}
+    .tab:hover{background:var(--soft); color:var(--fg)}
+    .tab.active{color:var(--fg); background:var(--soft)}
+
+    main{display:grid; gap:28px}
+    section{padding:var(--space)}
+    .section-target{scroll-margin-top:calc(var(--header-h) + 12px)}
+
+    /* ====== Hero ====== */
+    .hero{padding:64px var(--space) 24px}
+    .hero h1{font-size:clamp(36px,6vw,60px); line-height:1.08; margin:0 0 8px}
+    .sub{color:var(--muted); font-size:clamp(16px,2.2vw,18px)}
+    .meta{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; color:var(--muted)}
+    .dot{padding:0 .45ch}
+
+    /* ====== Cards & lists ====== */
+    .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px}
+    .kicker{letter-spacing:.18em; text-transform:uppercase; font-size:12px; color:var(--muted)}
+    .list{list-style:none; padding:0; margin:0}
+    .list li{display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); padding:14px 0}
+
+    /* ====== Hobbies chips ====== */
+    .chips{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{background:var(--soft); border:1px solid var(--border); padding:8px 12px; border-radius:999px; font-size:14px}
+
+    footer{border-top:1px solid var(--border); margin-top:12px}
+    .small{color:var(--muted); font-size:13px}
+
+    /* ====== Motion ====== */
+    @keyframes fadein{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
+    .reveal{opacity:0; animation:fadein .6s ease-out both}
+    .reveal.delay{animation-delay:.12s}
+    .reveal.delay2{animation-delay:.24s}
   </style>
+
+  <!-- Structured data for minimal SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert Gama",
+    "url": "https://robertgama.com",
+    "email": "mailto:rgama28@cmc.edu",
+    "affiliation": {"@type":"CollegeOrUniversity","name":"Claremont McKenna College"},
+    "homeLocation": {"@type":"Place","name":"Claremont, California"},
+    "knowsAbout": ["Consulting","Sustainability","Operations"],
+    "sameAs": ["https://www.linkedin.com/in/robertgamajr"]
+  }
+  </script>
 </head>
 <body>
-  <div class="wrap">
-    <main>
-      <h1>Robert Gama</h1>
-      <p class="kicker">Second-Year Undergraduate Student at Claremont McKenna College<span class="dot">·</span>Career Interest in Consulting</p>
+  <a href="#main" class="visually-hidden">Skip to content</a>
+
+  <!-- Header / Tabs -->
+  <header>
+    <div class="container">
       <nav aria-label="Primary">
-        <a class="link" href="mailto:rgama28@cmc.edu" title="Email Robert">Email</a>
-        <a class="link" href="https://www.linkedin.com/in/robertgamajr" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+        <div class="brand">Robert Gama</div>
+        <div class="tabs" role="navigation" aria-label="Sections">
+          <a class="tab" href="#about">About</a>
+          <a class="tab" href="#hobbies">Hobbies</a>
+          <a class="tab" href="#contact">Contact</a>
+        </div>
       </nav>
-    </main>
-  </div>
-  <footer>© Robert Gama</footer>
+    </div>
+  </header>
+
+  <main id="main" class="container animate">
+    <!-- Hero -->
+    <section class="hero reveal section-target" id="home">
+      <h1>Robert Gama</h1>
+      <p class="sub">Second‑Year Undergraduate · Economics–Accounting<span class="dot">·</span>Claremont McKenna College</p>
+      <div class="meta"><span>Claremont, California</span></div>
+      <p class="sub" style="margin-top:16px">“Exploring strategy and sustainability with clarity, discipline, and community.”</p>
+    </section>
+
+    <!-- About / Education (portrait intentionally omitted for now) -->
+    <section id="about" class="reveal delay section-target" aria-labelledby="about-heading">
+      <div class="kicker" id="about-heading">About</div>
+      <div class="card" style="margin-top:10px">
+        <p style="margin-top:0">
+          I’m a first‑generation student from Pomona studying Economics–Accounting at Claremont McKenna College. I care about where business, sustainability, and access meet — and I’m learning the tools to turn thoughtful systems into real‑world outcomes.
+        </p>
+        <ul class="list" style="margin-top:6px">
+          <li><span>College</span><span class="small">Claremont McKenna College</span></li>
+          <li><span>Major</span><span class="small">Economics–Accounting (Second‑Year)</span></li>
+          <li><span>Location</span><span class="small">Claremont, California</span></li>
+          <li><span>Interests</span><span class="small">Consulting · Sustainability · Operations</span></li>
+        </ul>
+      </div>
+      <!-- Portrait placeholder kept for later use
+      <img class="portrait" src="portrait.jpg" alt="Portrait of Robert Gama" />
+      -->
+    </section>
+
+    <!-- Hobbies / Interests -->
+    <section id="hobbies" class="reveal delay2 section-target" aria-labelledby="hobbies-heading">
+      <div class="kicker" id="hobbies-heading">Hobbies & Interests</div>
+      <div class="card" style="margin-top:10px">
+        <div class="chips" aria-label="Hobbies and interests">
+          <span class="chip">Design</span>
+          <span class="chip">Functional pottery</span>
+          <span class="chip">Landscape painting</span>
+          <span class="chip">Zero‑waste living</span>
+          <span class="chip">Rock climbing</span>
+          <span class="chip">Running</span>
+          <span class="chip">Yoga</span>
+          <span class="chip">The outdoors</span>
+          <span class="chip">Mariachi</span>
+          <span class="chip">Landscaping &amp; Gardening</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal section-target" aria-labelledby="contact-heading">
+      <div class="kicker" id="contact-heading">Contact</div>
+      <div class="card" style="margin-top:10px">
+        <ul class="list">
+          <li><span>Email</span><span><a href="mailto:rgama28@cmc.edu">rgama28@cmc.edu</a></span></li>
+          <li><span>LinkedIn</span><span><a href="https://www.linkedin.com/in/robertgamajr" target="_blank" rel="noopener me">linkedin.com/in/robertgamajr</a></span></li>
+          <li><span>Resume</span><span><a href="Robert-Gama-Resume.pdf" target="_blank" rel="noopener">View PDF</a></span></li>
+        </ul>
+      </div>
+      <p class="small" style="margin-top:10px">Available for conversations about consulting, operations, and sustainability.</p>
+    </section>
+
+    <section aria-hidden="true">
+      <p class="small">© <span id="year"></span> Robert Gama</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="small">Built with restraint. If you spot an issue, feel free to reach out.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal on scroll (subtle motion)
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('revealed'); e.target.style.opacity=1; } });
+    },{threshold:.15});
+    reveals.forEach(el=>io.observe(el));
+
+    // Highlight active tab while scrolling
+    const sections = [...document.querySelectorAll('.section-target')];
+    const tabs = [...document.querySelectorAll('.tab')];
+    const map = new Map([
+      ['about', tabs.find(t=>t.getAttribute('href')==='#about')],
+      ['hobbies', tabs.find(t=>t.getAttribute('href')==='#hobbies')],
+      ['contact', tabs.find(t=>t.getAttribute('href')==='#contact')],
+    ]);
+    const activeIO = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        const id = entry.target.id;
+        const tab = map.get(id);
+        if(!tab) return;
+        if(entry.isIntersecting){ tabs.forEach(t=>t.classList.remove('active')); tab.classList.add('active'); }
+      });
+    },{rootMargin:'-50% 0px -45% 0px', threshold:0});
+    sections.forEach(s=>activeIO.observe(s));
+  </script>
 </body>
 </html>
