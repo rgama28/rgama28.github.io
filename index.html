@@ -15,7 +15,6 @@
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=8" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=8" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=8" />
@@ -48,9 +47,10 @@
     .hero h1{font-size:clamp(36px,6vw,60px); line-height:1.08; margin:0 0 8px}
     .sub{color:var(--muted); font-size:clamp(16px,2.2vw,18px)}
     .meta{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; color:var(--muted)}
+    .dot{padding:0 .45ch}
 
     .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px}
-    .kicker{letter-spacing:.18em; text-transform:uppercase; font-size:12px; color:var(--muted)}
+    .kicker{letter-spacing:.22em; text-transform:uppercase; font-size:12px; color:var(--muted); margin-bottom:10px}
     .list{list-style:none; padding:0; margin:0}
     .list li{display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); padding:14px 0}
 
@@ -68,6 +68,8 @@
         <div class="brand">RG</div>
         <div class="tabs" role="navigation" aria-label="Sections">
           <a class="tab" href="#about">About</a>
+          <a class="tab" href="#education">Education</a>
+          <a class="tab" href="#projects">Projects</a>
           <a class="tab" href="#hobbies">Hobbies</a>
           <a class="tab" href="#contact">Contact</a>
         </div>
@@ -98,9 +100,39 @@
       </div>
     </section>
 
+    <!-- Education section -->
+    <section id="education" class="reveal section-target" aria-labelledby="edu-heading">
+      <div class="kicker" id="edu-heading">Education</div>
+      <div class="card" style="margin-top:14px">
+        <ul class="list">
+          <li>
+            <span>Claremont McKenna College</span>
+            <span class="small">Economics–Accounting (Second-Year)</span>
+          </li>
+          <li>
+            <span>The School of Arts and Enterprise, Pomona, CA</span>
+            <span class="small">Visual, Ceramic Arts &amp; Entrepreneurship (Valedictorian)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="reveal section-target" aria-labelledby="projects-heading">
+      <div class="kicker" id="projects-heading">Projects</div>
+      <div class="card" style="margin-top:14px">
+        <ul class="list">
+          <li>
+            <span>Cariño Botánica</span>
+            <span class="small">Zero‑waste store <span class="dot">·</span> <a href="https://www.carinobotanica.com" target="_blank" rel="noopener">carinobotanica.com</a> <span class="dot">·</span> <a href="https://instagram.com/carinobotanica" target="_blank" rel="noopener">@carinobotanica</a></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <section id="hobbies" class="reveal delay2 section-target" aria-labelledby="hobbies-heading">
       <div class="kicker" id="hobbies-heading">Hobbies</div>
-      <div class="card" style="margin-top:10px">
+      <div class="card" style="margin-top:14px">
         <div class="chips" aria-label="Hobbies">
           <span class="chip">Design</span>
           <span class="chip">Functional pottery</span>
@@ -109,7 +141,7 @@
           <span class="chip">Rock climbing</span>
           <span class="chip">Running</span>
           <span class="chip">Yoga</span>
-          <span class="chip">The Outdoors</span>
+          <span class="chip">the outdoors</span>
           <span class="chip">Mariachi</span>
           <span class="chip">Landscaping &amp; Gardening</span>
         </div>
@@ -118,7 +150,7 @@
 
     <section id="contact" class="reveal section-target" aria-labelledby="contact-heading">
       <div class="kicker" id="contact-heading">Contact</div>
-      <div class="card" style="margin-top:10px">
+      <div class="card" style="margin-top:14px">
         <ul class="list">
           <li><span>Email</span><span><a href="mailto:rgama28@cmc.edu">rgama28@cmc.edu</a></span></li>
           <li><span>LinkedIn</span><span><a href="https://www.linkedin.com/in/robertgamajr" target="_blank" rel="noopener me">linkedin.com/in/robertgamajr</a></span></li>
