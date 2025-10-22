@@ -16,9 +16,9 @@
   <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
 
   <!-- Favicon (reliable): place favicon.ico in repo root. Optional PNG fallbacks included. -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico?v=9" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=9" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=9" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=10" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=10" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=10" />
 
   <style>
     /* ====== Design tokens ====== */
@@ -101,7 +101,7 @@
 <body>
   <a href="#main" class="visually-hidden">Skip to content</a>
 
-  <!-- Header / Tabs -->
+  <!-- Header / Tabs (brand changed to RG) -->
   <header>
     <div class="container">
       <nav aria-label="Primary">
@@ -116,7 +116,7 @@
   </header>
 
   <main id="main" class="container animate">
-    <!-- Hero -->
+    <!-- Hero (kept format; new line about background) -->
     <section class="hero reveal section-target" id="home">
       <h1>Robert Gama</h1>
       <p class="sub">Second‑Year Undergraduate · Economics–Accounting<span class="dot">·</span>Claremont McKenna College</p>
@@ -143,7 +143,7 @@
       -->
     </section>
 
-    <!-- Hobbies / Interests -->
+    <!-- Hobbies -->
     <section id="hobbies" class="reveal delay2 section-target" aria-labelledby="hobbies-heading">
       <div class="kicker" id="hobbies-heading">Hobbies</div>
       <div class="card" style="margin-top:10px">
@@ -173,23 +173,17 @@
         </ul>
       </div>
     </section>
-
-    <section aria-hidden="true">
-      <p class="small">© <span id="year"></span> Robert Gama</p>
-    </section>
   </main>
 
   <footer>
     <div class="container">
-      <p class="small">© <span id="year2"></span> Robert Gama</p>
+      <p class="small">© <span id="year"></span> Robert Gama</p>
     </div>
   </footer>
 
   <script>
     // Year
-    const y = new Date().getFullYear();
-    document.getElementById('year').textContent = y;
-    document.getElementById('year2').textContent = y;
+    document.getElementById('year').textContent = new Date().getFullYear();
 
     // Reveal on scroll (subtle motion)
     const reveals = document.querySelectorAll('.reveal');
