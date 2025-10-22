@@ -16,9 +16,9 @@
   <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
 
   <!-- Favicon (reliable): place favicon.ico in repo root. Optional PNG fallbacks included. -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico?v=8" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=8" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=8" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=9" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=9" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=9" />
 
   <style>
     /* ====== Design tokens ====== */
@@ -93,7 +93,7 @@
     "email": "mailto:rgama28@cmc.edu",
     "affiliation": {"@type":"CollegeOrUniversity","name":"Claremont McKenna College"},
     "homeLocation": {"@type":"Place","name":"Claremont, California"},
-    "knowsAbout": ["Consulting","Sustainability","Operations"],
+    "knowsAbout": ["Consulting","Strategy","Executive search","Sustainability"],
     "sameAs": ["https://www.linkedin.com/in/robertgamajr"]
   }
   </script>
@@ -105,7 +105,7 @@
   <header>
     <div class="container">
       <nav aria-label="Primary">
-        <div class="brand">Robert Gama</div>
+        <div class="brand">RG</div>
         <div class="tabs" role="navigation" aria-label="Sections">
           <a class="tab" href="#about">About</a>
           <a class="tab" href="#hobbies">Hobbies</a>
@@ -121,7 +121,7 @@
       <h1>Robert Gama</h1>
       <p class="sub">Second‑Year Undergraduate · Economics–Accounting<span class="dot">·</span>Claremont McKenna College</p>
       <div class="meta"><span>Claremont, California</span></div>
-      <p class="sub" style="margin-top:16px">“Exploring strategy and sustainability with clarity, discipline, and community.”</p>
+      <p class="sub" style="margin-top:16px">First‑generation college student and second‑generation American from Pomona, CA.</p>
     </section>
 
     <!-- About / Education (portrait intentionally omitted for now) -->
@@ -129,13 +129,13 @@
       <div class="kicker" id="about-heading">About</div>
       <div class="card" style="margin-top:10px">
         <p style="margin-top:0">
-          I’m a first‑generation student from Pomona studying Economics–Accounting at Claremont McKenna College. I care about where business, sustainability, and access meet — and I’m learning the tools to turn thoughtful systems into real‑world outcomes.
+          I study Economics–Accounting at Claremont McKenna College, focusing on where business, sustainability, and access meet.
         </p>
         <ul class="list" style="margin-top:6px">
           <li><span>College</span><span class="small">Claremont McKenna College</span></li>
           <li><span>Major</span><span class="small">Economics–Accounting (Second‑Year)</span></li>
           <li><span>Location</span><span class="small">Claremont, California</span></li>
-          <li><span>Interests</span><span class="small">Consulting · Sustainability · Operations</span></li>
+          <li><span>Interests</span><span class="small">Consulting · Strategy · Executive search · Sustainability</span></li>
         </ul>
       </div>
       <!-- Portrait placeholder kept for later use
@@ -145,9 +145,9 @@
 
     <!-- Hobbies / Interests -->
     <section id="hobbies" class="reveal delay2 section-target" aria-labelledby="hobbies-heading">
-      <div class="kicker" id="hobbies-heading">Hobbies & Interests</div>
+      <div class="kicker" id="hobbies-heading">Hobbies</div>
       <div class="card" style="margin-top:10px">
-        <div class="chips" aria-label="Hobbies and interests">
+        <div class="chips" aria-label="Hobbies">
           <span class="chip">Design</span>
           <span class="chip">Functional pottery</span>
           <span class="chip">Landscape painting</span>
@@ -155,7 +155,7 @@
           <span class="chip">Rock climbing</span>
           <span class="chip">Running</span>
           <span class="chip">Yoga</span>
-          <span class="chip">The outdoors</span>
+          <span class="chip">The Outdoors</span>
           <span class="chip">Mariachi</span>
           <span class="chip">Landscaping &amp; Gardening</span>
         </div>
@@ -172,7 +172,6 @@
           <li><span>Resume</span><span><a href="Robert-Gama-Resume.pdf" target="_blank" rel="noopener">View PDF</a></span></li>
         </ul>
       </div>
-      <p class="small" style="margin-top:10px">Available for conversations about consulting, operations, and sustainability.</p>
     </section>
 
     <section aria-hidden="true">
@@ -182,13 +181,15 @@
 
   <footer>
     <div class="container">
-      <p class="small">Built with restraint. If you spot an issue, feel free to reach out.</p>
+      <p class="small">© <span id="year2"></span> Robert Gama</p>
     </div>
   </footer>
 
   <script>
     // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const y = new Date().getFullYear();
+    document.getElementById('year').textContent = y;
+    document.getElementById('year2').textContent = y;
 
     // Reveal on scroll (subtle motion)
     const reveals = document.querySelectorAll('.reveal');
@@ -201,9 +202,9 @@
     const sections = [...document.querySelectorAll('.section-target')];
     const tabs = [...document.querySelectorAll('.tab')];
     const map = new Map([
-      ['about', tabs.find(t=>t.getAttribute('href')==='#about')],
-      ['hobbies', tabs.find(t=>t.getAttribute('href')==='#hobbies')],
-      ['contact', tabs.find(t=>t.getAttribute('href')==='#contact')],
+      ['about', tabs.find(t=>t.getAttribute('href')==="#about")],
+      ['hobbies', tabs.find(t=>t.getAttribute('href')==="#hobbies")],
+      ['contact', tabs.find(t=>t.getAttribute('href')==="#contact")],
     ]);
     const activeIO = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
