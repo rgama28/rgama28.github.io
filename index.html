@@ -15,13 +15,12 @@
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
 
-  <!-- Favicon (reliable): place favicon.ico in repo root. Optional PNG fallbacks included. -->
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico?v=8" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=8" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=8" />
 
   <style>
-    /* ====== Design tokens ====== */
     :root{
       --bg:#ffffff; --fg:#0a0a0a; --muted:#646972; --card:#f6f7f8; --border:#e9ecf2; --soft:#f8f9fb; --link:#0a0a0a; --focus:#0a0a0a;
       --max:1040px; --radius:18px; --space:24px; --header-h:64px;
@@ -30,19 +29,12 @@
       :root{ --bg:#0b0c0f; --fg:#f2f3f5; --muted:#a6acb4; --card:#10131a; --border:#1f2432; --soft:#0e1117; --link:#f2f3f5; --focus:#f2f3f5; }
     }
 
-    /* ====== Base ====== */
     *,*::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; line-height:1.55}
-    img{max-width:100%; height:auto; display:block}
     a{color:var(--link); text-decoration:none}
     a:focus-visible, button:focus-visible{outline:2px solid var(--focus); outline-offset:2px; border-radius:10px}
-    .visually-hidden{position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
 
-    /* Reduced motion respect */
-    @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} .animate{animation:none!important} }
-
-    /* ====== Layout ====== */
     .container{max-width:var(--max); margin:0 auto; padding:var(--space)}
     header{position:sticky; top:0; z-index:20; border-bottom:1px solid var(--border); backdrop-filter:saturate(160%) blur(8px); background:color-mix(in oklab, var(--bg) 82%, transparent); height:var(--header-h)}
     nav{display:flex; align-items:center; justify-content:space-between; gap:16px; height:100%}
@@ -52,60 +44,28 @@
     .tab:hover{background:var(--soft); color:var(--fg)}
     .tab.active{color:var(--fg); background:var(--soft)}
 
-    main{display:grid; gap:28px}
-    section{padding:var(--space)}
-    .section-target{scroll-margin-top:calc(var(--header-h) + 12px)}
-
-    /* ====== Hero ====== */
     .hero{padding:64px var(--space) 24px}
     .hero h1{font-size:clamp(36px,6vw,60px); line-height:1.08; margin:0 0 8px}
     .sub{color:var(--muted); font-size:clamp(16px,2.2vw,18px)}
     .meta{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; color:var(--muted)}
-    .dot{padding:0 .45ch}
 
-    /* ====== Cards & lists ====== */
     .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:18px}
     .kicker{letter-spacing:.18em; text-transform:uppercase; font-size:12px; color:var(--muted)}
     .list{list-style:none; padding:0; margin:0}
     .list li{display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); padding:14px 0}
 
-    /* ====== Hobbies chips ====== */
     .chips{display:flex; flex-wrap:wrap; gap:10px}
     .chip{background:var(--soft); border:1px solid var(--border); padding:8px 12px; border-radius:999px; font-size:14px}
 
     footer{border-top:1px solid var(--border); margin-top:12px}
     .small{color:var(--muted); font-size:13px}
-
-    /* ====== Motion ====== */
-    @keyframes fadein{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
-    .reveal{opacity:0; animation:fadein .6s ease-out both}
-    .reveal.delay{animation-delay:.12s}
-    .reveal.delay2{animation-delay:.24s}
   </style>
-
-  <!-- Structured data for minimal SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Robert Gama",
-    "url": "https://robertgama.com",
-    "email": "mailto:rgama28@cmc.edu",
-    "affiliation": {"@type":"CollegeOrUniversity","name":"Claremont McKenna College"},
-    "homeLocation": {"@type":"Place","name":"Claremont, California"},
-    "knowsAbout": ["Consulting","Sustainability","Operations"],
-    "sameAs": ["https://www.linkedin.com/in/robertgamajr"]
-  }
-  </script>
 </head>
 <body>
-  <a href="#main" class="visually-hidden">Skip to content</a>
-
-  <!-- Header / Tabs -->
   <header>
     <div class="container">
       <nav aria-label="Primary">
-        <div class="brand">Robert Gama</div>
+        <div class="brand">RG</div>
         <div class="tabs" role="navigation" aria-label="Sections">
           <a class="tab" href="#about">About</a>
           <a class="tab" href="#hobbies">Hobbies</a>
@@ -116,53 +76,46 @@
   </header>
 
   <main id="main" class="container animate">
-    <!-- Hero -->
     <section class="hero reveal section-target" id="home">
       <h1>Robert Gama</h1>
-      <p class="sub">Second‑Year Undergraduate · Economics–Accounting<span class="dot">·</span>Claremont McKenna College</p>
+      <p class="sub">Second-Year Undergraduate · Economics–Accounting<span class="dot">·</span>Claremont McKenna College</p>
       <div class="meta"><span>Claremont, California</span></div>
-      <p class="sub" style="margin-top:16px">“Exploring strategy and sustainability with clarity, discipline, and community.”</p>
+      <p class="sub" style="margin-top:16px">First-generation student and second-generation American from Pomona, CA.</p>
     </section>
 
-    <!-- About / Education (portrait intentionally omitted for now) -->
     <section id="about" class="reveal delay section-target" aria-labelledby="about-heading">
       <div class="kicker" id="about-heading">About</div>
       <div class="card" style="margin-top:10px">
         <p style="margin-top:0">
-          I’m a first‑generation student from Pomona studying Economics–Accounting at Claremont McKenna College. I care about where business, sustainability, and access meet — and I’m learning the tools to turn thoughtful systems into real‑world outcomes.
+          I’m a first-generation student and second-generation American from Pomona, CA, studying Economics–Accounting at Claremont McKenna College. My interests lie in strategy and consulting that create practical solutions for complex challenges.
         </p>
         <ul class="list" style="margin-top:6px">
           <li><span>College</span><span class="small">Claremont McKenna College</span></li>
-          <li><span>Major</span><span class="small">Economics–Accounting (Second‑Year)</span></li>
+          <li><span>Major</span><span class="small">Economics–Accounting (Second-Year)</span></li>
           <li><span>Location</span><span class="small">Claremont, California</span></li>
-          <li><span>Interests</span><span class="small">Consulting · Sustainability · Operations</span></li>
+          <li><span>Focus Areas</span><span class="small">Consulting · Strategy · Executive search · Sustainability</span></li>
         </ul>
       </div>
-      <!-- Portrait placeholder kept for later use
-      <img class="portrait" src="portrait.jpg" alt="Portrait of Robert Gama" />
-      -->
     </section>
 
-    <!-- Hobbies / Interests -->
     <section id="hobbies" class="reveal delay2 section-target" aria-labelledby="hobbies-heading">
-      <div class="kicker" id="hobbies-heading">Hobbies & Interests</div>
+      <div class="kicker" id="hobbies-heading">Hobbies</div>
       <div class="card" style="margin-top:10px">
-        <div class="chips" aria-label="Hobbies and interests">
+        <div class="chips" aria-label="Hobbies">
           <span class="chip">Design</span>
           <span class="chip">Functional pottery</span>
           <span class="chip">Landscape painting</span>
-          <span class="chip">Zero‑waste living</span>
+          <span class="chip">Zero-waste living</span>
           <span class="chip">Rock climbing</span>
           <span class="chip">Running</span>
           <span class="chip">Yoga</span>
-          <span class="chip">The outdoors</span>
+          <span class="chip">The Outdoors</span>
           <span class="chip">Mariachi</span>
           <span class="chip">Landscaping &amp; Gardening</span>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="reveal section-target" aria-labelledby="contact-heading">
       <div class="kicker" id="contact-heading">Contact</div>
       <div class="card" style="margin-top:10px">
@@ -172,48 +125,17 @@
           <li><span>Resume</span><span><a href="Robert-Gama-Resume.pdf" target="_blank" rel="noopener">View PDF</a></span></li>
         </ul>
       </div>
-      <p class="small" style="margin-top:10px">Available for conversations about consulting, operations, and sustainability.</p>
-    </section>
-
-    <section aria-hidden="true">
-      <p class="small">© <span id="year"></span> Robert Gama</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p class="small">Built with restraint. If you spot an issue, feel free to reach out.</p>
+      <p class="small">© <span id="year"></span> Robert Gama</p>
     </div>
   </footer>
 
   <script>
-    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Reveal on scroll (subtle motion)
-    const reveals = document.querySelectorAll('.reveal');
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('revealed'); e.target.style.opacity=1; } });
-    },{threshold:.15});
-    reveals.forEach(el=>io.observe(el));
-
-    // Highlight active tab while scrolling
-    const sections = [...document.querySelectorAll('.section-target')];
-    const tabs = [...document.querySelectorAll('.tab')];
-    const map = new Map([
-      ['about', tabs.find(t=>t.getAttribute('href')==='#about')],
-      ['hobbies', tabs.find(t=>t.getAttribute('href')==='#hobbies')],
-      ['contact', tabs.find(t=>t.getAttribute('href')==='#contact')],
-    ]);
-    const activeIO = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        const id = entry.target.id;
-        const tab = map.get(id);
-        if(!tab) return;
-        if(entry.isIntersecting){ tabs.forEach(t=>t.classList.remove('active')); tab.classList.add('active'); }
-      });
-    },{rootMargin:'-50% 0px -45% 0px', threshold:0});
-    sections.forEach(s=>activeIO.observe(s));
   </script>
 </body>
 </html>
