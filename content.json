@@ -1,0 +1,104 @@
+{
+  "name": "ROBERT GAMA",
+  "subtitles": ["STUDENT", "ENTREPRENEUR", "SUSTAINABILITY ADVOCATE", "ARTIST"],
+
+  "aboutHeadline": "Student exploring business and sustainability",
+  "aboutParagraphs": [
+    "I'm Robert, a second-year Economics student at Claremont McKenna College and a Robert Day and Henry R. Kravis Scholar. I grew up in Pomona as a first-generation Mexican-American, and that background shapes how I think about opportunity and access in business.",
+    "I'm interested in consulting because it combines strategic thinking, teamwork, and solving real problems. I co-founded Cariño Botánica, a zero-waste refill store serving the Inland Empire, and I currently advise climate tech startups through Claremont Sustainability Consulting.",
+    "Outside of academics and business, I'm involved in Scholars of Finance, co-founded CMC's Breakfast Club, and perform with Mariachi Serrano. In my free time, I read, garden, and stay active through rock climbing, running, and yoga."
+  ],
+  "aboutImage": "assets/img/hero/portrait.jpg",
+
+  "projects": [
+    {
+      "slug": "artwork",
+      "title": "ARTWORK",
+      "subtitle": "Art, Pottery & Paintings",
+      "page": "artwork.html",
+      "cover": "assets/img/projects/artwork-thumb.jpg",
+      "thumb": "assets/img/projects/artwork-thumb.jpg",
+      "hero": "assets/img/hero/artwork-hero.jpg",
+      "categories": ["Art", "Pottery", "Paintings"],
+      "blurb": [
+        "I started painting as a way to slow down and pay attention.",
+        "Over time it became a practice I shared with friends and family, and I began giving pieces away.",
+        "This page is a small archive of work I’ve made across different mediums."
+      ],
+      "gallery": [
+        "assets/img/artwork/01.jpg",
+        "assets/img/artwork/02.jpg",
+        "assets/img/artwork/03.jpg"
+      ]
+    },
+    {
+      "slug": "carino",
+      "title": "CARIÑO BOTÁNICA",
+      "subtitle": "Zero-waste refillery",
+      "page": "carino.html",
+      "cover": "assets/img/projects/carino-thumb.jpg",
+      "thumb": "assets/img/projects/carino-thumb.jpg",
+      "hero": "assets/img/hero/carino-hero.jpg",
+      "blurb": [
+        "Cariño Botánica is a zero-waste refillery built to make everyday essentials more accessible.",
+        "I led day-to-day operations, vendor sourcing, and community outreach while learning what it takes to run a mission-driven business.",
+        "The work shaped how I think about systems, pricing, and what actually fits into people’s lives."
+      ],
+      "gallery": [
+        "assets/img/carino/01.jpg",
+        "assets/img/carino/02.jpg"
+      ]
+    }
+  ],
+
+  "awards": [
+    {
+      "org": "ROBERT DAY SCHOLARS",
+      "name": "ROBERT DAY SCHOLAR B.A.",
+      "year": 2025,
+      "url": "https://www.claremontmckenna.edu/robert-day-scholars"
+    },
+    {
+      "org": "CMC",
+      "name": "HENRY R. KRAVIS SCHOLAR",
+      "year": 2024,
+      "url": "https://www.claremontmckenna.edu"
+    },
+    {
+      "org": "COLLEGE BOARD",
+      "name": "AP SCHOLAR WITH DISTINCTION",
+      "year": 2024,
+      "url": "https://apstudents.collegeboard.org/awards-recognitions/ap-scholar-award"
+    },
+    {
+      "org": "THE SAE",
+      "name": "VALEDICTORIAN",
+      "year": 2024,
+      "url": "https://example.com"
+    }
+  ],
+
+  "education": [
+    {
+      "school": "CLAREMONT MCKENNA COLLEGE",
+      "yearLine": "2028 • YEAR II",
+      "detailLine": "B.A. ECONOMICS & PSYCHOLOGY"
+    },
+    {
+      "school": "THE SCHOOL OF ARTS & ENTERPRISE",
+      "yearLine": "2024 • VALEDICTORIAN",
+      "detailLine": "HIGH SCHOOL DIPLOMA"
+    }
+  ],
+
+  "contact": {
+    "email": "rgama28@cmc.edu",
+    "linkedin": "https://www.linkedin.com/in/your-link-here"
+  },
+
+  "footer": {
+    "left": "DESIGNED BY ROBERT GAMA ©",
+    "middle": "ABOUT ME • WORKS",
+    "right": "MADE IN HTML/CSS"
+  }
+}
