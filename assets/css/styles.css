@@ -2,7 +2,7 @@
   --bg: #ffffff;
   --ink: #0b0b0b;
   --muted: #3a3a3a;
-  --line: rgba(0,0,0,0.18);
+  --line: rgba(0,0,0,0.28);
   --shadow: 0 20px 60px rgba(0,0,0,0.12);
   --max: 1180px;
 
@@ -104,7 +104,7 @@ body{
   color: var(--ink);
   padding: 8px 12px;
   border-radius: 999px;
-  border: 1px solid var(--line);
+  border: 2px solid var(--line);
   width: fit-content;
 }
 .pill:hover{ box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
@@ -115,12 +115,12 @@ body{
   width: 38px;
   height: 22px;
   border-radius: 999px;
-  border: 1px solid var(--line);
+  border: 2px solid var(--line);
   font-weight: 700;
   font-size: 12px;
 }
 .pill-text{
-  font-weight: 700;
+  font-weight: 800;
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -206,7 +206,7 @@ body{
 }
 .project-card .project-kicker{
   font-family: var(--condensed);
-  font-size: clamp(56px, 9vw, 120px);
+  font-size: clamp(44px, 6.5vw, 88px);
   line-height: 0.9;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -472,4 +472,7 @@ body{
   .gallery-grid{ grid-template-columns: 1fr; }
   .footer-meta{ grid-template-columns: 1fr; }
   .footer-links, .footer-right{ text-align:left; }
+}
+.footer-meta{
+  display: none;
 }
