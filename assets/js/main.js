@@ -32,18 +32,24 @@ function setupActivePills() {
 
   const io = new IntersectionObserver(
     (entries) => {
+      // choose the entry closest to "active zone"
       const visible = entries
         .filter((e) => e.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
       if (!visible) return;
 
       pills.forEach((p) => p.classList.remove("is-active"));
       const active = pills.find((p) => p.dataset.section === visible.target.id);
       if (active) active.classList.add("is-active");
     },
-    { threshold: [0.2, 0.35, 0.5] }
+    {
+      // This makes the active section be the one in the middle of the viewport
+      rootMargin: "-40% 0px -50% 0px",
+      threshold: [0.01, 0.1, 0.2]
+    }
   );
-
+  
   sections.forEach((s) => io.observe(s));
 }
 
