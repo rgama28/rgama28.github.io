@@ -140,7 +140,9 @@ body{
 .content{ min-width: 0; }
 
 .section{
-  padding: 40px 0 70px;
+   padding: 70px 0 140px; /* more whitespace like Framer */
+   scroll-margin-top: 90px; /* anchors land cleanly */
+   min-height: 85vh;
 }
 .section + .section{ border-top: 1px solid transparent; }
 
