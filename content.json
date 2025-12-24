@@ -16,8 +16,8 @@
       "title": "ARTWORK",
       "subtitle": "Art, Pottery & Paintings",
       "page": "artwork.html",
-      "cover": "assets/img/projects/gallery.jpg",
-      "thumb": "assets/img/projects/gallery.jpg",
+      "cover": "assets/img/projects/artwork-thumb.jpg",
+      "thumb": "assets/img/projects/artwork.thumb.jpg",
       "hero": "assets/img/hero/artwork-hero.jpg",
       "categories": ["Art", "Pottery", "Paintings"],
       "blurb": [
