@@ -90,29 +90,28 @@ function renderIndex(c) {
 
   // Projects feature (Artwork card)
   const pf = document.getElementById("projectFeature");
-  if (pf) {
-    pf.innerHTML = "";
-    const proj = c.projects?.find((p) => p.slug === "artwork") || c.projects?.[0];
-    if (proj) {
-      const a = document.createElement("a");
-      a.href = proj.page;
-      a.className = "project-card";
+if (pf) {
+  pf.innerHTML = "";
 
-      const img = document.createElement("img");
-      img.src = proj.cover;
-      img.alt = proj.title;
-      img.loading = "lazy";
+  (c.projects || []).forEach((proj) => {
+    const a = document.createElement("a");
+    a.href = proj.page;
+    a.className = "project-card";
 
-      const kicker = el("div", "project-kicker", proj.title);
-      const sub = el("div", "project-sub", proj.subtitle);
+    const img = document.createElement("img");
+    img.src = proj.cover;
+    img.alt = proj.title;
+    img.loading = "lazy";
 
-      a.appendChild(img);
-      a.appendChild(kicker);
-      a.appendChild(sub);
-      pf.appendChild(a);
-    }
-  }
+    const kicker = el("div", "project-kicker", proj.title);
+    const sub = el("div", "project-sub", proj.subtitle);
 
+    a.appendChild(img);
+    a.appendChild(kicker);
+    a.appendChild(sub);
+    pf.appendChild(a);
+  });
+}
   // Awards table rows, each row links out
   const awards = document.getElementById("awardsRows");
   if (awards) {
