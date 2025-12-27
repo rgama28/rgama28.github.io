@@ -4,13 +4,31 @@
 
   "aboutHeadline": "Student exploring business and sustainability",
   "aboutParagraphs": [
-    "I'm Robert, a second-year Economics & Psychology student at Claremont McKenna College and a Robert Day and Henry R. Kravis Scholar. I grew up in Pomona, CA as a first-generation American, my background shapes how I think about opportunity and access in business.",
-    "I'm interested in consulting because it combines strategic thinking, teamwork, and solving real problems. I co-founded Cariño Botánica, a zero-waste refill store serving the Inland Empire, and I currently help advise businesses become more sustainable through Claremont Sustainability Consulting.",
-    "Outside of academics and business, I'm involved in Scholars of Finance, co-founded CMC's Breakfast Club, and perform with Mariachi Serrano de los Claremont Colleges. In my free time, I read, garden, and stay active through rock climbing, running, and yoga."
+    "I'm Robert, a second-year Economics and Psychology student at Claremont McKenna College and a Robert Day and Henry R. Kravis Scholar. I grew up in Pomona as a first-generation American, and that shapes how I think about opportunity and what business can do for people.",
+    "In 2021, my sister and I started Cariño Botánica, a zero-waste refill store serving the Inland Empire. Running it has been one of the best teachers I've had. I've learned more about operations, systems, and what actually works than I could in any classroom. I also work with Claremont Sustainability Consulting and stay involved with Scholars of Finance and CMC's Breakfast Club.",
+    "I'm interested in consulting because I like figuring out how things work, solving problems that matter, and working with people who care about what they do. Outside of school and business, I perform with Mariachi Serrano, paint and make pottery when I have time, garden, and stay active through rock climbing, running, and yoga.",
+	"This site collects some of the work and projects I've done. Thanks for being here!"
   ],
   "aboutImage": "assets/img/portrait.jpg",
 
   "projects": [
+	{
+      "slug": "carino",
+      "title": "CARIÑO BOTÁNICA",
+      "subtitle": "Zero-waste refillery",
+      "page": "carino.html",
+      "cover": "assets/img/projects/carino-thumb.jpg",
+      "thumb": "assets/img/projects/carino-thumb.jpg",
+      "hero": "assets/img/hero/carino-hero.jpg",
+      "blurb": [
+        "I co-founded Cariño Botánica in 2021 with my sister to bring zero-waste, accessible essentials to the Inland Empire. We started at a small booth in Downtown Pomona and grew into a refillery serving communities that often lack sustainable options. I've handled everything from vendor sourcing and product research to operations, finances, web design, events, and customer service.",
+        "My work taught me how to build systems from the ground up, balance mission with margins, and design for real accessibility. It's been one of the most challenging and formative experiences in understanding what it takes to run a business rooted in community and purpose."
+      ],
+      "gallery": [
+        "assets/img/carino/01.jpg",
+        "assets/img/carino/02.jpg"
+      ]
+    },
     {
       "slug": "artwork",
       "title": "ARTWORK",
@@ -21,9 +39,8 @@
       "hero": "assets/img/hero/artwork-hero.jpg",
       "categories": ["Art", "Pottery", "Paintings"],
       "blurb": [
-        "I started painting as a way to slow down and pay attention.",
-        "Over time it became a practice I shared with friends and family.",
-        "This page is an archive of work I’ve made across different mediums."
+        "I've been drawn to painting and making since childhood, finding my way to landscapes: trees, water, the green spaces I sought growing up in Pomona. In high school I discovered ceramics and fell into throwing functional pieces like bowls, mugs, and plates glazed in earthy tones with smooth, deliberate surfaces.",
+        "These days I don't make as much, but when I do it's to slow down and fill our home with things that feel calm and alive. Below is an archive of work across different mediums and years, organized from most recent to oldest."
       ],
       "gallery": [
         "assets/img/artwork/artwork-80.jpg",
@@ -106,24 +123,6 @@
         "assets/img/artwork/artwork-3.jpg",
 	"assets/img/artwork/artwork-2.jpg",
 	"assets/img/artwork/artwork-1.jpg"
-      ]
-    },
-    {
-      "slug": "carino",
-      "title": "CARIÑO BOTÁNICA",
-      "subtitle": "Zero-waste refillery",
-      "page": "carino.html",
-      "cover": "assets/img/projects/carino-thumb.jpg",
-      "thumb": "assets/img/projects/carino-thumb.jpg",
-      "hero": "assets/img/hero/carino-hero.jpg",
-      "blurb": [
-        "Cariño Botánica is a zero-waste refillery built to make everyday essentials more accessible.",
-        "I led day-to-day operations, vendor sourcing, and community outreach while learning what it takes to run a mission-driven business.",
-        "The work shaped how I think about systems, pricing, and what actually fits into people’s lives."
-      ],
-      "gallery": [
-        "assets/img/carino/01.jpg",
-        "assets/img/carino/02.jpg"
       ]
     }
   ],
