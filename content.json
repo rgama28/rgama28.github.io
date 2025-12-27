@@ -11,6 +11,24 @@
   "aboutImage": "assets/img/portrait.jpg",
 
   "projects": [
+	{
+      "slug": "carino",
+      "title": "CARIÑO BOTÁNICA",
+      "subtitle": "Zero-waste refillery",
+      "page": "carino.html",
+      "cover": "assets/img/projects/carino-thumb.jpg",
+      "thumb": "assets/img/projects/carino-thumb.jpg",
+      "hero": "assets/img/hero/carino-hero.jpg",
+      "blurb": [
+        "Cariño Botánica is a zero-waste refillery built to make everyday essentials more accessible.",
+        "I led day-to-day operations, vendor sourcing, and community outreach while learning what it takes to run a mission-driven business.",
+        "The work shaped how I think about systems, pricing, and what actually fits into people’s lives."
+      ],
+      "gallery": [
+        "assets/img/carino/01.jpg",
+        "assets/img/carino/02.jpg"
+      ]
+    },
     {
       "slug": "artwork",
       "title": "ARTWORK",
@@ -106,24 +124,6 @@
         "assets/img/artwork/artwork-3.jpg",
 	"assets/img/artwork/artwork-2.jpg",
 	"assets/img/artwork/artwork-1.jpg"
-      ]
-    },
-    {
-      "slug": "carino",
-      "title": "CARIÑO BOTÁNICA",
-      "subtitle": "Zero-waste refillery",
-      "page": "carino.html",
-      "cover": "assets/img/projects/carino-thumb.jpg",
-      "thumb": "assets/img/projects/carino-thumb.jpg",
-      "hero": "assets/img/hero/carino-hero.jpg",
-      "blurb": [
-        "Cariño Botánica is a zero-waste refillery built to make everyday essentials more accessible.",
-        "I led day-to-day operations, vendor sourcing, and community outreach while learning what it takes to run a mission-driven business.",
-        "The work shaped how I think about systems, pricing, and what actually fits into people’s lives."
-      ],
-      "gallery": [
-        "assets/img/carino/01.jpg",
-        "assets/img/carino/02.jpg"
       ]
     }
   ],
