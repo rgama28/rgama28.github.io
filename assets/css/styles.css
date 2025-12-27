@@ -206,10 +206,11 @@ body{
 }
 .project-card .project-kicker{
   font-family: var(--condensed);
-  font-size: clamp(44px, 6.5vw, 88px);
-  line-height: 0.9;
+  font-size: clamp(26px, 3.2vw, 44px);
+  line-height: 1.02;
   text-transform: uppercase;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.08em; /* makes it read like a label, not a headline */
+  font-weight: 700;
 }
 .project-card .project-sub{
   margin-top: -6px;
