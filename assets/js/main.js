@@ -169,9 +169,19 @@ if (pf) {
     liA.appendChild(el("span", "contact-pillnum", "002"));
     liA.appendChild(el("span", "", "LinkedIn"));
 
-    wrap.appendChild(emailA);
-    wrap.appendChild(liA);
-    contact.appendChild(wrap);
+    const resumeA = document.createElement("a");
+resumeA.className = "contact-item";
+resumeA.href = "Robert-Gama-Resume.pdf";
+resumeA.target = "_blank";
+resumeA.rel = "noopener";
+resumeA.appendChild(el("span", "contact-pillnum", "003"));
+resumeA.appendChild(el("span", "", "Resume (PDF)"));
+
+wrap.appendChild(emailA);
+wrap.appendChild(liA);
+wrap.appendChild(resumeA);
+contact.appendChild(wrap);
+
   }
 
   // Footer meta
