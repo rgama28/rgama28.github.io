@@ -334,6 +334,14 @@ body{
 }
 .backtotop:hover{ opacity: 0.9; }
 .backtotop .arrow{ font-size: 0.9em; }
+.copyright{
+  width: min(var(--max), calc(100% - 40px));
+  margin: 14px auto 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
 
 /* PROJECT PAGES */
 .projectpage{
