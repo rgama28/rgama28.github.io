@@ -304,3 +304,6 @@ function renderCarino(c) {
   if (path === "artwork.html") renderArtwork(c);
   if (path === "carino.html") renderCarino(c);
 })();
+// Auto-update copyright year
+const y = document.getElementById("copyrightYear");
+if (y) y.textContent = new Date().getFullYear();
