@@ -95,7 +95,7 @@ if (shelfNote) shelfNote.textContent = c.bookshelfNote || "";
 const shelfGrid = document.getElementById("bookshelfGrid");
 if (shelfGrid) {
   shelfGrid.innerHTML = "";
-  (c.bookshelf || []).slice(0, 5).forEach((b) => {
+  (c.bookshelf || []).slice(0, 6).forEach((b) => {
     const item = document.createElement("div");
     item.className = "book";
     item.innerHTML = `
