@@ -11,6 +11,15 @@
   ],
   "aboutImage": "assets/img/portrait.jpg",
 
+"bookshelfNote": "A small selection of recent and formative reads.",
+"bookshelf": [
+  { "title": "Thinking in Systems", "author": "Donella Meadows" },
+  { "title": "The Goal", "author": "Eliyahu M. Goldratt" },
+  { "title": "The Cold Start Problem", "author": "Andrew Chen" },
+  { "title": "Doughnut Economics", "author": "Kate Raworth" },
+  { "title": "Poor Economics", "author": "Abhijit V. Banerjee & Esther Duflo" }
+],
+	
   "projects": [
 	{
       "slug": "carino",
