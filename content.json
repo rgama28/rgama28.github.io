@@ -13,11 +13,12 @@
 
 "bookshelfNote": "A small selection of recent and formative reads.",
 "bookshelf": [
-  { "title": "Thinking in Systems", "author": "Donella Meadows" },
-  { "title": "The Goal", "author": "Eliyahu M. Goldratt" },
-  { "title": "The Cold Start Problem", "author": "Andrew Chen" },
-  { "title": "Doughnut Economics", "author": "Kate Raworth" },
-  { "title": "Poor Economics", "author": "Abhijit V. Banerjee & Esther Duflo" }
+  { "title": "The Millionaire Next Door", "author": "Thomas J. Stanley & William D. Danko" },
+  { "title": "The 9 Steps to Financial Freedom", "author": "Suze Orman" },
+  { "title": "The Marketing Gurus", "author": "Chris Murray" },
+  { "title": "The Good Earth", "author": "Pearl S. Buck" },
+  { "title": "The Poisonwood Bible", "author": "Barbara Kingsolver" }
+  { "title": "The Giver", "author": "Lois Lowry" }
 ],
 	
   "projects": [
