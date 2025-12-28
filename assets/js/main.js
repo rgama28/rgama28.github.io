@@ -88,6 +88,24 @@ function renderIndex(c) {
 
   setImg("aboutImage", c.aboutImage);
 
+  // Bookshelf (5-book curated list)
+const shelfNote = document.getElementById("bookshelfNote");
+if (shelfNote) shelfNote.textContent = c.bookshelfNote || "";
+
+const shelfGrid = document.getElementById("bookshelfGrid");
+if (shelfGrid) {
+  shelfGrid.innerHTML = "";
+  (c.bookshelf || []).slice(0, 5).forEach((b) => {
+    const item = document.createElement("div");
+    item.className = "book";
+    item.innerHTML = `
+      <div class="book-title">${b.title}</div>
+      <div class="book-author">${b.author}</div>
+    `;
+    shelfGrid.appendChild(item);
+  });
+}
+
   // Projects feature (Artwork card)
   const pf = document.getElementById("projectFeature");
 if (pf) {
