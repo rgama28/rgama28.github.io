@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Robert Gama</title>
-  <meta name="description" content="Robert Gama — Economics and Psychology at Claremont McKenna College." />
+  <title>Map • Robert Gama</title>
+  <meta name="description" content="Countries Robert Gama has visited: United States, Mexico, Singapore, Indonesia, Japan, and China." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body data-page="home">
+<body data-page="map">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="topbar">
@@ -55,17 +55,30 @@
 
   <main class="main" id="main">
     <div class="wrap">
-      <section class="hero" data-reveal>
-        <div class="ring-decor" aria-hidden="true"></div>
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1 class="hero-title">Robert Gama</h1>
-            <p class="hero-role">Econ + Psych @ CMC · Robert Day &amp; Kravis Scholar</p>
-            <p class="hero-lede">I grew up in Pomona watching my family figure out sales and small business through trial and error. That's still how I operate: economics and psychology at CMC as a first-gen student, a zero-waste business I built from a folding table, and a handful of student orgs I somehow ended up running. Consulting is just the next place to point that same problem-solving and curiosity.</p>
-          </div>
-          <div class="hero-photo">
-            <img src="assets/img/portrait.jpg" alt="Portrait of Robert Gama" loading="lazy" />
-          </div>
+      <section data-reveal>
+        <p class="section-label">Map</p>
+        <h1 class="section-title">Where I've been</h1>
+        <p class="map-intro">A running list of places I've set foot!</p>
+
+        <div class="map-stat">
+          <span class="map-stat-number">6</span>
+          <span class="map-stat-label">Countries visited</span>
+        </div>
+
+        <div class="map-svg-wrap">
+          <svg id="worldMap" class="map-svg" viewBox="0 0 1000 500" role="img" aria-label="World map highlighting the United States, Mexico, Singapore, Indonesia, Japan, and China">
+            <g id="worldCountries"></g>
+            <g id="worldMarkers"></g>
+          </svg>
+        </div>
+
+        <div class="country-chips">
+          <span class="hobby-chip">United States</span>
+          <span class="hobby-chip">Mexico</span>
+          <span class="hobby-chip">Singapore</span>
+          <span class="hobby-chip">Indonesia</span>
+          <span class="hobby-chip">Japan</span>
+          <span class="hobby-chip">China</span>
         </div>
       </section>
     </div>
@@ -89,5 +102,6 @@
   </main>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/map.js" defer></script>
 </body>
 </html>

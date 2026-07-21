@@ -1,229 +1,702 @@
 {
-  "name": "ROBERT GAMA",
-  "subtitles": ["STUDENT", "ENTREPRENEUR", "SUSTAINABILITY ADVOCATE", "ARTIST"],
-
-  "aboutHeadline": "Student exploring business and sustainability",
-  "aboutParagraphs": [
-    "I'm Robert, a second-year Economics and Psychology student at Claremont McKenna College and a Robert Day and Henry R. Kravis Scholar. I grew up in Pomona as a first-generation American, and that shapes how I think about opportunity and what business can do for people.",
-    "In 2021, my sister and I started Cariño Botánica, a zero-waste refill store serving the Inland Empire. Running it has been one of the best teachers I've had. I've learned more about operations, systems, and what actually works than I could in any classroom. I also work with Claremont Sustainability Consulting and stay involved with Scholars of Finance and CMC's Breakfast Club.",
-    "I'm interested in consulting because I like figuring out how things work, solving problems that matter, and working with people who care about what they do. Outside of school and business, I perform with Mariachi Serrano, paint and make pottery when I have time, garden, and stay active through rock climbing, running, and yoga.",
-	"This site collects some of the work and projects I've done. Thanks for being here!"
-  ],
-  "aboutImage": "assets/img/portrait.jpg",
-
-  "projects": [
-	{
-      "slug": "carino",
-      "title": "CARIÑO BOTÁNICA",
-      "subtitle": "Zero-Waste Refillery",
-      "page": "carino.html",
-      "cover": "assets/img/projects/carino-thumb.jpg",
-      "thumb": "assets/img/projects/carino-thumb.jpg",
-      "hero": "assets/img/projects/carino-thumb.jpg",
-      "blurb": [
-        "I co-founded Cariño Botánica in 2021 with my sister to bring zero-waste, accessible essentials to the Inland Empire. We started at a small booth in Downtown Pomona and grew into a refillery serving communities that often lack sustainable options. I've handled everything from vendor sourcing and product research to operations, finances, web design, events, and customer service.",
-        "My work taught me how to build systems from the ground up, balance mission with margins, and design for real accessibility. It's been one of the most challenging and formative experiences in understanding what it takes to run a business rooted in community and purpose."
-      ],
-      "gallery": [
-        "assets/img/carino/carino-51.jpg",
-        "assets/img/carino/carino-50.jpg",
-		"assets/img/carino/carino-49.jpg",
-		"assets/img/carino/carino-48.jpg",
-		"assets/img/carino/carino-47.jpg",
-		"assets/img/carino/carino-46.jpg",
-		"assets/img/carino/carino-45.jpg",
-        "assets/img/carino/carino-44.jpg",
-		"assets/img/carino/carino-43.jpg",
-		"assets/img/carino/carino-42.jpg",
-		"assets/img/carino/carino-41.jpg",
-		"assets/img/carino/carino-40.jpg",
-		"assets/img/carino/carino-39.jpg",
-        "assets/img/carino/carino-38.jpg",
-		"assets/img/carino/carino-37.jpg",
-		"assets/img/carino/carino-36.jpg",
-		"assets/img/carino/carino-35.jpg",
-		"assets/img/carino/carino-34.jpg",
-		"assets/img/carino/carino-33.jpg",
-        "assets/img/carino/carino-32.jpg",
-		"assets/img/carino/carino-31.jpg",
-		"assets/img/carino/carino-30.jpg",
-		"assets/img/carino/carino-29.jpg",
-		"assets/img/carino/carino-28.jpg",
-		"assets/img/carino/carino-27.jpg",
-        "assets/img/carino/carino-26.jpg",
-		"assets/img/carino/carino-25.jpg",
-		"assets/img/carino/carino-24.jpg",
-		"assets/img/carino/carino-23.jpg",
-		"assets/img/carino/carino-22.jpg",
-		"assets/img/carino/carino-21.jpg",
-        "assets/img/carino/carino-20.jpg",
-		"assets/img/carino/carino-19.jpg",
-		"assets/img/carino/carino-18.jpg",
-		"assets/img/carino/carino-17.jpg",
-		"assets/img/carino/carino-16.jpg",
-		"assets/img/carino/carino-15.jpg",
-		"assets/img/carino/carino-14.jpg",
-		"assets/img/carino/carino-13.jpg",
-		"assets/img/carino/carino-12.jpg",
-		"assets/img/carino/carino-11.jpg",
-        "assets/img/carino/carino-10.jpg",
-		"assets/img/carino/carino-9.jpg",
-		"assets/img/carino/carino-8.jpg",
-		"assets/img/carino/carino-7.jpg",
-		"assets/img/carino/carino-6.jpg",
-		"assets/img/carino/carino-5.jpg",
-        "assets/img/carino/carino-4.jpg",
-		"assets/img/carino/carino-3.jpg",
-		"assets/img/carino/carino-2.jpg",
-		"assets/img/carino/carino-1.jpg"
-      ]
-    },
-    {
-      "slug": "artwork",
-      "title": "ARTWORK",
-      "subtitle": "Art, Pottery & Paintings",
-      "page": "artwork.html",
-      "cover": "assets/img/projects/artwork-thumb.jpg",
-      "thumb": "assets/img/projects/artwork-thumb.jpg",
-      "hero": "assets/img/artwork/artwork-69.jpg",
-      "categories": ["Art", "Pottery", "Paintings"],
-      "blurb": [
-        "I've been drawn to painting and making since childhood, finding my way to landscapes: trees, water, the green spaces I sought growing up in Pomona. In high school I discovered ceramics and fell into throwing functional pieces like bowls, mugs, and plates glazed in earthy tones with smooth, deliberate surfaces.",
-        "These days I don't make as much, but when I do it's to slow down and fill our home with things that feel calm and alive. Below is an archive of work across different mediums and years, organized from most recent to oldest."
-      ],
-      "gallery": [
-        "assets/img/artwork/artwork-80.jpg",
-        "assets/img/artwork/artwork-79.jpg",
-        "assets/img/artwork/artwork-78z.jpg",
-		"assets/img/artwork/artwork-77.jpg",
-		"assets/img/artwork/artwork-76.jpg",
-        "assets/img/artwork/artwork-75.jpg",
-        "assets/img/artwork/artwork-74.jpg",
-		"assets/img/artwork/artwork-73.jpg",
-		"assets/img/artwork/artwork-72.jpg",
-        "assets/img/artwork/artwork-71.jpg",
-        "assets/img/artwork/artwork-70.jpg",
-		"assets/img/artwork/artwork-69.jpg",
-		"assets/img/artwork/artwork-68.jpg",
-        "assets/img/artwork/artwork-67.jpg",
-        "assets/img/artwork/artwork-66.jpg",
-		"assets/img/artwork/artwork-65.jpg",
-		"assets/img/artwork/artwork-64.jpg",
-        "assets/img/artwork/artwork-63.jpg",
-        "assets/img/artwork/artwork-62.jpg",
-		"assets/img/artwork/artwork-61.jpg",
-		"assets/img/artwork/artwork-60.jpg",
-        "assets/img/artwork/artwork-59.jpg",
-        "assets/img/artwork/artwork-58.jpg",
-		"assets/img/artwork/artwork-57.jpg",
-		"assets/img/artwork/artwork-56.jpg",
-		"assets/img/artwork/artwork-55.jpg",
-		"assets/img/artwork/artwork-54.jpg",
-        "assets/img/artwork/artwork-53.jpg",
-        "assets/img/artwork/artwork-52.jpg",
-		"assets/img/artwork/artwork-51.jpg",
-		"assets/img/artwork/artwork-50.jpg",
-        "assets/img/artwork/artwork-49.jpg",
-        "assets/img/artwork/artwork-48.jpg",
-		"assets/img/artwork/artwork-47.jpg",
-		"assets/img/artwork/artwork-46.jpg",
-        "assets/img/artwork/artwork-45.jpg",
-        "assets/img/artwork/artwork-44.jpg",
-		"assets/img/artwork/artwork-43.jpg",
-		"assets/img/artwork/artwork-42.jpg",
-        "assets/img/artwork/artwork-41.jpg",
-        "assets/img/artwork/artwork-40.jpg",
-		"assets/img/artwork/artwork-39.jpg",
- 		"assets/img/artwork/artwork-38.jpg",
-		"assets/img/artwork/artwork-37.jpg",
-		"assets/img/artwork/artwork-36.jpg",
-        "assets/img/artwork/artwork-35.jpg",
-        "assets/img/artwork/artwork-34.jpg",
-		"assets/img/artwork/artwork-33.jpg",
-		"assets/img/artwork/artwork-32.jpg",
-        "assets/img/artwork/artwork-31.jpg",
-        "assets/img/artwork/artwork-30.jpg",
-		"assets/img/artwork/artwork-29.jpg",
-		"assets/img/artwork/artwork-28.jpg",
-        "assets/img/artwork/artwork-27.jpg",
-        "assets/img/artwork/artwork-26.jpg",
-		"assets/img/artwork/artwork-25.jpg",
-		"assets/img/artwork/artwork-24.jpg",
-        "assets/img/artwork/artwork-23.jpg",
-        "assets/img/artwork/artwork-22.jpg",
-		"assets/img/artwork/artwork-21.jpg",
-		"assets/img/artwork/artwork-20.jpg",
-        "assets/img/artwork/artwork-19.jpg",
-        "assets/img/artwork/artwork-18.jpg",
-		"assets/img/artwork/artwork-17.jpg",
-		"assets/img/artwork/artwork-16.jpg",
-        "assets/img/artwork/artwork-15.jpg",
-        "assets/img/artwork/artwork-14.jpg",
-		"assets/img/artwork/artwork-13.jpg",
- 		"assets/img/artwork/artwork-12.jpg",
-        "assets/img/artwork/artwork-11.jpg",
-		"assets/img/artwork/artwork-10.jpg",
-		"assets/img/artwork/artwork-9.jpg",
-        "assets/img/artwork/artwork-8.jpg",
-        "assets/img/artwork/artwork-7.jpg",
-		"assets/img/artwork/artwork-6.jpg",
-		"assets/img/artwork/artwork-5.jpg",
- 		"assets/img/artwork/artwork-4.jpg",
-        "assets/img/artwork/artwork-3.jpg",
-		"assets/img/artwork/artwork-2.jpg",
-		"assets/img/artwork/artwork-1.jpg"
-      ]
-    }
-  ],
-
-  "awards": [
-    {
-      "org": "ROBERT DAY SCHOLARS",
-      "name": "ROBERT DAY SCHOLAR B.A.",
-      "year": 2025,
-      "url": "https://www.cmc.edu/robert-day-school/scholars"
-    },
-    {
-      "org": "CMC",
-      "name": "HENRY R. KRAVIS SCHOLAR",
-      "year": 2024,
-      "url": "https://www.cmc.edu/soll-center/scholar-community-students"
-    },
-    {
-      "org": "COLLEGE BOARD",
-      "name": "AP SCHOLAR WITH DISTINCTION",
-      "year": 2024,
-      "url": "https://apcentral.collegeboard.org/exam-administration-ordering-scores/scores/awards/scholar-awards"
-    },
-    {
-      "org": "THE SAE",
-      "name": "VALEDICTORIAN",
-      "year": 2024,
-      "url": "https://thesae.org/"
-    }
-  ],
-
-  "education": [
-    {
-      "school": "CLAREMONT MCKENNA COLLEGE",
-      "yearLine": "2028 • YEAR II",
-      "detailLine": "B.A. ECONOMICS & PSYCHOLOGY"
-    },
-    {
-      "school": "THE SCHOOL OF ARTS & ENTERPRISE",
-      "yearLine": "2024 • VALEDICTORIAN",
-      "detailLine": "HIGH SCHOOL DIPLOMA"
-    }
-  ],
-
-  "contact": {
+  "site": {
     "email": "RGama28@cmc.edu",
-    "linkedin": "https://www.linkedin.com/in/your-link-here"
+    "linkedin": "https://www.linkedin.com/in/robertgamajr",
+    "resume": "Robert-Gama-Resume.pdf"
   },
-
-  "footer": {
-    "left": "DESIGNED BY ROBERT GAMA ©",
-    "middle": "ABOUT ME • WORKS",
-    "right": "MADE IN HTML/CSS"
+  "gallery": {
+    "items": [
+      {
+        "src": "assets/img/artwork/artwork-124.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-123.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-122.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-121.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-120.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-119.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-118.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-117.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-116.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-115.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-114.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-113.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-112.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-111.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-110.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-109.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-108.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-107.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-106.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-105.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-104.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-103.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-102.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-101.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-100.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-99.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-98.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-97.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-96.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-95.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-94.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-93.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-92.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-91.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-90.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-89.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-88.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-87.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-86.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-85.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-84.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-83.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-82.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-81.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-80.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-79.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-79.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-78.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-78z.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-77.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-76.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-75.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-74.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-73.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-72.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-71.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-70.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-69.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-68.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-67.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-66.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-65.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-64.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-63.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-60.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-59.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-58.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-57.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-56.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-55.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-54.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-53.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-52.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-51.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-50.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-49.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-48.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-47.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-46.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-45.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-44.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-44.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-43.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-42.jpg",
+        "category": "pottery",
+        "alt": "Pottery piece by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-41.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-40.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-39.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-38.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-37.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-36.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-35.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-35.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-34.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-34.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-33.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-32.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-31.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-30.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-29.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-28.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-27.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-26.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-25.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-25.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-24.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-23.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-23.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-22.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-22.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-21.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-20.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-19.1.jpg",
+        "category": "photographs",
+        "alt": "Travel photograph by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-19.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-18.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-17.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-16.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-15.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-14.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-13.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-12.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-11.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-10.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-9.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-8.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-7.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-6.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      },
+      {
+        "src": "assets/img/artwork/artwork-5.jpg",
+        "category": "paintings",
+        "alt": "Painting by Robert Gama"
+      }
+    ]
+  },
+  "carino": {
+    "hero": "assets/img/carino/carino-51.jpg",
+    "gallery": [
+      "assets/img/carino/carino-51.jpg",
+      "assets/img/carino/carino-50.jpg",
+      "assets/img/carino/carino-49.jpg",
+      "assets/img/carino/carino-48.jpg",
+      "assets/img/carino/carino-47.jpg",
+      "assets/img/carino/carino-46.jpg",
+      "assets/img/carino/carino-45.jpg",
+      "assets/img/carino/carino-44.jpg",
+      "assets/img/carino/carino-43.jpg",
+      "assets/img/carino/carino-42.jpg",
+      "assets/img/carino/carino-41.jpg",
+      "assets/img/carino/carino-40.jpg",
+      "assets/img/carino/carino-39.jpg",
+      "assets/img/carino/carino-38.jpg",
+      "assets/img/carino/carino-37.jpg",
+      "assets/img/carino/carino-36.jpg",
+      "assets/img/carino/carino-35.jpg",
+      "assets/img/carino/carino-34.jpg",
+      "assets/img/carino/carino-33.jpg",
+      "assets/img/carino/carino-32.jpg",
+      "assets/img/carino/carino-31.jpg",
+      "assets/img/carino/carino-30.jpg",
+      "assets/img/carino/carino-29.jpg",
+      "assets/img/carino/carino-28.jpg",
+      "assets/img/carino/carino-27.jpg",
+      "assets/img/carino/carino-26.jpg",
+      "assets/img/carino/carino-25.jpg",
+      "assets/img/carino/carino-24.jpg",
+      "assets/img/carino/carino-23.jpg",
+      "assets/img/carino/carino-22.jpg",
+      "assets/img/carino/carino-21.jpg",
+      "assets/img/carino/carino-20.jpg",
+      "assets/img/carino/carino-19.jpg",
+      "assets/img/carino/carino-18.jpg",
+      "assets/img/carino/carino-17.jpg",
+      "assets/img/carino/carino-16.jpg",
+      "assets/img/carino/carino-15.jpg",
+      "assets/img/carino/carino-14.jpg",
+      "assets/img/carino/carino-13.jpg",
+      "assets/img/carino/carino-12.jpg",
+      "assets/img/carino/carino-11.jpg",
+      "assets/img/carino/carino-10.jpg",
+      "assets/img/carino/carino-9.jpg",
+      "assets/img/carino/carino-8.jpg",
+      "assets/img/carino/carino-7.jpg",
+      "assets/img/carino/carino-6.jpg",
+      "assets/img/carino/carino-5.jpg",
+      "assets/img/carino/carino-4.jpg",
+      "assets/img/carino/carino-3.jpg",
+      "assets/img/carino/carino-2.jpg",
+      "assets/img/carino/carino-1.jpg"
+    ]
   }
 }

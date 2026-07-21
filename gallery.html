@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Robert Gama</title>
-  <meta name="description" content="Robert Gama — Economics and Psychology at Claremont McKenna College." />
+  <title>Gallery • Robert Gama</title>
+  <meta name="description" content="Paintings and pottery by Robert Gama." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body data-page="home">
+<body data-page="gallery">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="topbar">
@@ -55,18 +55,19 @@
 
   <main class="main" id="main">
     <div class="wrap">
-      <section class="hero" data-reveal>
-        <div class="ring-decor" aria-hidden="true"></div>
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <h1 class="hero-title">Robert Gama</h1>
-            <p class="hero-role">Econ + Psych @ CMC · Robert Day &amp; Kravis Scholar</p>
-            <p class="hero-lede">I grew up in Pomona watching my family figure out sales and small business through trial and error. That's still how I operate: economics and psychology at CMC as a first-gen student, a zero-waste business I built from a folding table, and a handful of student orgs I somehow ended up running. Consulting is just the next place to point that same problem-solving and curiosity.</p>
-          </div>
-          <div class="hero-photo">
-            <img src="assets/img/portrait.jpg" alt="Portrait of Robert Gama" loading="lazy" />
-          </div>
+      <section data-reveal>
+        <p class="section-label">Art &amp; Objects</p>
+        <h1 class="section-title">Gallery</h1>
+        <p class="gallery-intro">Paintings and pottery I've made over the years.</p>
+
+        <div class="filter-row" role="group" aria-label="Filter gallery by medium">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="pottery">Pottery</button>
+          <button class="filter-btn" data-filter="paintings">Paintings</button>
+          <button class="filter-btn" data-filter="photographs">Photographs</button>
         </div>
+
+        <div class="photo-grid" id="galleryGrid"></div>
       </section>
     </div>
 

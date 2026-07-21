@@ -1,319 +1,128 @@
-async function loadContent() {
+/* Robert Gama — shared site behavior: nav, reveal, gallery filter, footer year */
+
+function initNav(){
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("siteNav");
+  const backdrop = document.getElementById("navBackdrop");
+  if (!toggle || !nav) return;
+
+  function closeNav(){
+    nav.classList.remove("is-open");
+    backdrop?.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  }
+  function openNav(){
+    nav.classList.add("is-open");
+    backdrop?.classList.add("is-open");
+    toggle.setAttribute("aria-expanded", "true");
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.contains("is-open");
+    isOpen ? closeNav() : openNav();
+  });
+  backdrop?.addEventListener("click", closeNav);
+  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeNav));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeNav();
+  });
+}
+
+function markCurrentNav(){
+  const page = document.body.dataset.page;
+  if (!page) return;
+  document.querySelectorAll(".nav-links a[data-page]").forEach((a) => {
+    if (a.dataset.page === page) {
+      a.classList.add("is-current");
+      a.setAttribute("aria-current", "page");
+    }
+  });
+}
+
+function revealOnScroll(){
+  const els = Array.from(document.querySelectorAll("[data-reveal]"));
+  if (!els.length) return;
+  if (!("IntersectionObserver" in window)) {
+    els.forEach((el) => el.classList.add("is-visible"));
+    return;
+  }
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0 }
+  );
+  els.forEach((el) => io.observe(el));
+}
+
+function setFooterCopy(){
+  const el = document.getElementById("footerCopy");
+  if (el) el.textContent = "© " + new Date().getFullYear() + " Robert Gama.";
+}
+
+async function loadContent(){
   const res = await fetch("content.json", { cache: "no-store" });
   if (!res.ok) throw new Error("content.json not found");
   return res.json();
 }
 
-function setImg(id, src) {
-  const el = document.getElementById(id);
-  if (el && src) el.src = src;
-}
-
-function revealOnScroll() {
-  const els = Array.from(document.querySelectorAll("[data-reveal]"));
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) e.target.classList.add("is-visible");
-      });
-    },
-    { threshold: 0.12 }
-  );
-  els.forEach((el) => io.observe(el));
-}
-
-function setupActivePills() {
-  const pills = Array.from(document.querySelectorAll(".pill[data-section]"));
-  const sections = pills
-    .map((p) => document.getElementById(p.dataset.section))
-    .filter(Boolean);
-
-  if (!pills.length || !sections.length) return;
-
-  const io = new IntersectionObserver(
-    (entries) => {
-      // choose the entry closest to "active zone"
-      const visible = entries
-        .filter((e) => e.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (!visible) return;
-
-      pills.forEach((p) => p.classList.remove("is-active"));
-      const active = pills.find((p) => p.dataset.section === visible.target.id);
-      if (active) active.classList.add("is-active");
-    },
-    {
-      // This makes the active section be the one in the middle of the viewport
-      rootMargin: "-40% 0px -50% 0px",
-      threshold: [0.01, 0.1, 0.2]
-    }
-  );
-  
-  sections.forEach((s) => io.observe(s));
-}
-
-function el(tag, className, text) {
-  const x = document.createElement(tag);
-  if (className) x.className = className;
-  if (text != null) x.textContent = text;
-  return x;
-}
-
-/* INDEX PAGE RENDER */
-function renderIndex(c) {
-  const name = document.getElementById("siteName");
-  if (name) name.textContent = (c.name || "ROBERT GAMA").toUpperCase();
-
-  const subs = document.getElementById("heroSubtitles");
-  if (subs) {
-    subs.innerHTML = "";
-    (c.subtitles || []).forEach((s) => {
-      subs.appendChild(el("div", "subitem", s));
-    });
-  }
-
-  const aboutHeadline = document.getElementById("aboutHeadline");
-  if (aboutHeadline) aboutHeadline.textContent = c.aboutHeadline || "Student exploring business and sustainability";
-
-  const aboutText = document.getElementById("aboutText");
-  if (aboutText) {
-    aboutText.innerHTML = "";
-    (c.aboutParagraphs || []).forEach((p) => {
-      const para = document.createElement("p");
-      para.textContent = p;
-      aboutText.appendChild(para);
-    });
-  }
-
-  setImg("aboutImage", c.aboutImage);
-
-  // Projects feature (Artwork card)
-  const pf = document.getElementById("projectFeature");
-if (pf) {
-  pf.innerHTML = "";
-
-  (c.projects || []).forEach((proj) => {
-    const a = document.createElement("a");
-    a.href = proj.page;
-    a.className = "project-card";
-
+function buildPhotoGrid(container, items, altPrefix){
+  container.innerHTML = "";
+  items.forEach((item) => {
     const img = document.createElement("img");
-    img.src = proj.cover;
-    img.alt = proj.title;
+    img.src = typeof item === "string" ? item : item.src;
+    img.alt = typeof item === "string" ? altPrefix : item.alt || altPrefix;
     img.loading = "lazy";
-
-    const kicker = el("div", "project-kicker", proj.title);
-    const sub = el("div", "project-sub", proj.subtitle);
-
-    a.appendChild(img);
-    a.appendChild(kicker);
-    a.appendChild(sub);
-    pf.appendChild(a);
+    if (typeof item !== "string" && item.category) {
+      img.dataset.category = item.category;
+    }
+    container.appendChild(img);
   });
 }
-  // Awards table rows, each row links out
-  const awards = document.getElementById("awardsRows");
-  if (awards) {
-    awards.innerHTML = "";
-    (c.awards || []).forEach((aw) => {
-      const row = el("div", "table-row");
-      const org = el("div", "table-cell", aw.org);
-      const award = el("div", "table-cell");
-      const year = el("div", "table-cell right", String(aw.year));
 
-      const link = document.createElement("a");
-      link.href = aw.url;
-      link.target = "_blank";
-      link.rel = "noopener";
-      link.textContent = aw.name;
+function initFilters(container){
+  const buttons = document.querySelectorAll(".filter-btn");
+  if (!buttons.length || !container) return;
 
-      award.appendChild(link);
-      row.appendChild(org);
-      row.appendChild(award);
-      row.appendChild(year);
-      awards.appendChild(row);
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      const filter = btn.dataset.filter;
+      container.querySelectorAll("img").forEach((img) => {
+        const show = filter === "all" || img.dataset.category === filter;
+        img.classList.toggle("is-hidden", !show);
+      });
     });
-  }
-
-  // Education cards
-  const edu = document.getElementById("educationCards");
-  if (edu) {
-    edu.innerHTML = "";
-    (c.education || []).forEach((ed, idx) => {
-      const card = el("div", "edu-card" + (idx % 2 === 1 ? " right" : ""));
-      card.appendChild(el("div", "line big", ed.school));
-      card.appendChild(el("div", "line small", ed.yearLine));
-      card.appendChild(el("div", "line small", ed.detailLine));
-      edu.appendChild(card);
-    });
-  }
-
-  // Contact
-  const contact = document.getElementById("contactGrid");
-  if (contact) {
-    contact.innerHTML = "";
-    const wrap = el("div", "contact-list");
-
-    const emailA = document.createElement("a");
-    emailA.className = "contact-item";
-    emailA.href = `mailto:${c.contact?.email}`;
-    emailA.appendChild(el("span", "contact-pillnum", "001"));
-    emailA.appendChild(el("span", "", c.contact?.email || "email@example.com"));
-
-    const liA = document.createElement("a");
-    liA.className = "contact-item";
-    liA.href = c.contact?.linkedin || "#";
-    liA.target = "_blank";
-    liA.rel = "noopener";
-    liA.appendChild(el("span", "contact-pillnum", "002"));
-    liA.appendChild(el("span", "", "LinkedIn"));
-
-    const resumeA = document.createElement("a");
-resumeA.className = "contact-item";
-resumeA.href = "Robert-Gama-Resume.pdf";
-resumeA.target = "_blank";
-resumeA.rel = "noopener";
-resumeA.appendChild(el("span", "contact-pillnum", "003"));
-resumeA.appendChild(el("span", "", "Resume (PDF)"));
-
-wrap.appendChild(emailA);
-wrap.appendChild(liA);
-wrap.appendChild(resumeA);
-contact.appendChild(wrap);
-
-  }
-
-  // Footer meta
-  const fl = document.getElementById("footerLeft");
-  const fm = document.getElementById("footerLinks");
-  const fr = document.getElementById("footerRight");
-
-  if (fl) fl.textContent = c.footer?.left || "Designed by Robert";
-  if (fm) fm.textContent = c.footer?.middle || "About • Works";
-  if (fr) fr.textContent = c.footer?.right || "Made in HTML/CSS";
-}
-
-/* PROJECT PAGES RENDER */
-function renderArtwork(c) {
-  const proj = c.projects?.find((p) => p.slug === "artwork");
-  if (!proj) return;
-
-  setImg("artworkHero", proj.hero);
-
-  const blurb = document.getElementById("artworkBlurb");
-  if (blurb) {
-    blurb.innerHTML = "";
-    (proj.blurb || []).forEach((p) => {
-      const para = document.createElement("p");
-      para.textContent = p;
-      blurb.appendChild(para);
-    });
-  }
-
-  const cats = document.getElementById("artworkCats");
-  if (cats) {
-    cats.innerHTML = "";
-    (proj.categories || []).forEach((x) => cats.appendChild(el("div", "chip", x)));
-  }
-
-  const g = document.getElementById("artworkGallery");
-  if (g) {
-    g.innerHTML = "";
-    (proj.gallery || []).forEach((src, i) => {
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = `Artwork ${i + 1}`;
-      img.loading = "lazy";
-      g.appendChild(img);
-    });
-  }
-
-  const next = document.getElementById("artworkNext");
-  if (next) {
-    const nextProj = c.projects?.find((p) => p.slug === "carino");
-    if (!nextProj) return;
-
-    next.innerHTML = "";
-    const a = document.createElement("a");
-    a.className = "next-card";
-    a.href = nextProj.page;
-
-    const img = document.createElement("img");
-    img.src = nextProj.thumb;
-    img.alt = nextProj.title;
-    img.loading = "lazy";
-
-    a.appendChild(img);
-    a.appendChild(el("div", "", nextProj.title));
-    next.appendChild(a);
-  }
-}
-
-function renderCarino(c) {
-  const proj = c.projects?.find((p) => p.slug === "carino");
-  if (!proj) return;
-
-  setImg("carinoHero", proj.hero);
-
-  const blurb = document.getElementById("carinoBlurb");
-  if (blurb) {
-    blurb.innerHTML = "";
-    (proj.blurb || []).forEach((p) => {
-      const para = document.createElement("p");
-      para.textContent = p;
-      blurb.appendChild(para);
-    });
-  }
-
-  const g = document.getElementById("carinoGallery");
-  if (g) {
-    g.innerHTML = "";
-    (proj.gallery || []).forEach((src, i) => {
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = `Cariño ${i + 1}`;
-      img.loading = "lazy";
-      g.appendChild(img);
-    });
-  }
-
-  const next = document.getElementById("carinoNext");
-  if (next) {
-    const nextProj = c.projects?.find((p) => p.slug === "artwork");
-    if (!nextProj) return;
-
-    next.innerHTML = "";
-    const a = document.createElement("a");
-    a.className = "next-card";
-    a.href = nextProj.page;
-
-    const img = document.createElement("img");
-    img.src = nextProj.thumb;
-    img.alt = nextProj.title;
-    img.loading = "lazy";
-
-    a.appendChild(img);
-    a.appendChild(el("div", "", nextProj.title));
-    next.appendChild(a);
-  }
+  });
 }
 
 (async function init(){
+  initNav();
+  markCurrentNav();
   revealOnScroll();
+  setFooterCopy();
 
-  const c = await loadContent();
+  const galleryGrid = document.getElementById("galleryGrid");
+  const carinoGrid = document.getElementById("carinoGrid");
 
-  // Which page are we on?
-  const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-
-  if (path === "" || path === "index.html") {
-    renderIndex(c);
-    setupActivePills();
+  if (galleryGrid || carinoGrid) {
+    try {
+      const c = await loadContent();
+      if (galleryGrid) {
+        buildPhotoGrid(galleryGrid, c.gallery.items, "Artwork by Robert Gama");
+        initFilters(galleryGrid);
+      }
+      if (carinoGrid) {
+        buildPhotoGrid(carinoGrid, c.carino.gallery, "Cariño Botánica");
+      }
+    } catch (err) {
+      console.error(err);
+    }
   }
-  if (path === "artwork.html") renderArtwork(c);
-  if (path === "carino.html") renderCarino(c);
 })();
-// Auto-update copyright year
-const y = document.getElementById("copyrightYear");
-if (y) y.textContent = new Date().getFullYear();

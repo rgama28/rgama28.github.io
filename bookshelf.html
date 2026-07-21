@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bookshelf • Robert Gama</title>
+  <meta name="description" content="Books Robert Gama has read and recommends." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="bookshelf">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="ring-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 64 64"><circle cx="33" cy="30" r="27" fill="none" stroke="var(--marigold)" stroke-width="2"/><circle cx="30" cy="33" r="20" fill="none" stroke="var(--teal)" stroke-width="2"/><circle cx="34" cy="31" r="13" fill="none" stroke="var(--brick)" stroke-width="2"/><circle cx="31" cy="32" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/><circle cx="32" cy="32" r="1.6" fill="var(--ink)"/></svg>
+      </span>
+      <span class="brand-name">Robert Gama</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+  </header>
+
+  <aside class="sidenav" id="siteNav">
+    <a class="brand" href="index.html">
+      <span class="ring-mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 64 64"><circle cx="33" cy="30" r="27" fill="none" stroke="var(--marigold)" stroke-width="2"/><circle cx="30" cy="33" r="20" fill="none" stroke="var(--teal)" stroke-width="2"/><circle cx="34" cy="31" r="13" fill="none" stroke="var(--brick)" stroke-width="2"/><circle cx="31" cy="32" r="6" fill="none" stroke="var(--ink)" stroke-width="2"/><circle cx="32" cy="32" r="1.6" fill="var(--ink)"/></svg>
+      </span>
+      <span class="brand-name">Robert Gama</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" data-page="home"><span class="dot"></span>Home</a>
+      <a href="about.html" data-page="about"><span class="dot"></span>About</a>
+      <a href="experience.html" data-page="experience"><span class="dot"></span>Experience</a>
+      <a href="projects.html" data-page="projects"><span class="dot"></span>Projects</a>
+      <a href="bookshelf.html" data-page="bookshelf"><span class="dot"></span>Bookshelf</a>
+      <a href="gallery.html" data-page="gallery"><span class="dot"></span>Gallery</a>
+      <a href="map.html" data-page="map"><span class="dot"></span>Map</a>
+      <a href="contact.html" data-page="contact"><span class="dot"></span>Contact</a>
+    </nav>
+    <div class="nav-foot">
+      <span class="ring-mark small" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 64 64"><circle cx="33" cy="30" r="27" fill="none" stroke="var(--ink-faint)" stroke-width="3"/><circle cx="31" cy="32" r="13" fill="none" stroke="var(--ink-faint)" stroke-width="3"/></svg>
+      </span>
+      <span>Pomona, CA</span>
+    </div>
+  </aside>
+  <div class="backdrop" id="navBackdrop"></div>
+
+  <main class="main" id="main">
+    <div class="wrap">
+      <section data-reveal>
+        <p class="section-label">Bookshelf</p>
+        <h1 class="section-title">Bookshelf</h1>
+        <p style="max-width:62ch; color:var(--ink-soft); margin-bottom:32px;">Current and past reads.</p>
+
+        <div class="book-grid">
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/797467-L.jpg" alt="Cover of The Millionaire Next Door" loading="lazy" />
+            <span class="book-title">The Millionaire Next Door</span>
+            <span class="book-author">Thomas J. Stanley &amp; William D. Danko</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/7748535-L.jpg" alt="Cover of The 9 Steps to Financial Freedom" loading="lazy" />
+            <span class="book-title">The 9 Steps to Financial Freedom</span>
+            <span class="book-author">Suze Orman</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/866064-L.jpg" alt="Cover of The Marketing Gurus" loading="lazy" />
+            <span class="book-title">The Marketing Gurus</span>
+            <span class="book-author">Chris Murray</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/7686301-L.jpg" alt="Cover of Case Interview Secrets" loading="lazy" />
+            <span class="book-title">Case Interview Secrets</span>
+            <span class="book-author">Victor Cheng</span>
+          </div>
+          <div class="book-card">
+            <!-- No cover found on Open Library for this edition; using placeholder -->
+            <div class="book-cover book-cover-placeholder c1">Hacking the Case Interview</div>
+            <span class="book-title">Hacking the Case Interview</span>
+            <span class="book-author">Taylor Warfield</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/8315355-L.jpg" alt="Cover of Principles" loading="lazy" />
+            <span class="book-title">Principles</span>
+            <span class="book-author">Ray Dalio</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/13239320-L.jpg" alt="Cover of Poverty, by America" loading="lazy" />
+            <span class="book-title">Poverty, by America</span>
+            <span class="book-author">Matthew Desmond</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/6437089-L.jpg" alt="Cover of 50 Great Myths of Popular Psychology" loading="lazy" />
+            <span class="book-title">50 Great Myths of Popular Psychology</span>
+            <span class="book-author">Scott O. Lilienfeld</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/15160586-L.jpg" alt="Cover of Harry Potter and the Sorcerer's Stone" loading="lazy" />
+            <span class="book-title">Harry Potter and the Sorcerer's Stone</span>
+            <span class="book-author">J.K. Rowling</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/15158664-L.jpg" alt="Cover of Harry Potter and the Chamber of Secrets" loading="lazy" />
+            <span class="book-title">Harry Potter and the Chamber of Secrets</span>
+            <span class="book-author">J.K. Rowling</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/10580435-L.jpg" alt="Cover of Harry Potter and the Prisoner of Azkaban" loading="lazy" />
+            <span class="book-title">Harry Potter and the Prisoner of Azkaban</span>
+            <span class="book-author">J.K. Rowling</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/12216503-L.jpg" alt="Cover of Dracula" loading="lazy" />
+            <span class="book-title">Dracula</span>
+            <span class="book-author">Bram Stoker</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/8281954-L.jpg" alt="Cover of Hamlet" loading="lazy" />
+            <span class="book-title">Hamlet</span>
+            <span class="book-author">William Shakespeare</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/9273490-L.jpg" alt="Cover of The Catcher in the Rye" loading="lazy" />
+            <span class="book-title">The Catcher in the Rye</span>
+            <span class="book-author">J.D. Salinger</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/14351077-L.jpg" alt="Cover of To Kill a Mockingbird" loading="lazy" />
+            <span class="book-title">To Kill a Mockingbird</span>
+            <span class="book-author">Harper Lee</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/8684447-L.jpg" alt="Cover of Lord of the Flies" loading="lazy" />
+            <span class="book-title">Lord of the Flies</span>
+            <span class="book-author">William Golding</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/15189945-L.jpg" alt="Cover of The Good Earth" loading="lazy" />
+            <span class="book-title">The Good Earth</span>
+            <span class="book-author">Pearl S. Buck</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/853663-L.jpg" alt="Cover of The Poisonwood Bible" loading="lazy" />
+            <span class="book-title">The Poisonwood Bible</span>
+            <span class="book-author">Barbara Kingsolver</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/936314-L.jpg" alt="Cover of Southland" loading="lazy" />
+            <span class="book-title">Southland</span>
+            <span class="book-author">Nina Revoyr</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/846914-L.jpg" alt="Cover of Fledgling" loading="lazy" />
+            <span class="book-title">Fledgling</span>
+            <span class="book-author">Octavia Butler</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/11972784-L.jpg" alt="Cover of The Hitchhiker's Guide to the Galaxy" loading="lazy" />
+            <span class="book-title">The Hitchhiker's Guide to the Galaxy</span>
+            <span class="book-author">Douglas Adams, illus. Chris Riddell</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/8251889-L.jpg" alt="Cover of Crazy Rich Asians" loading="lazy" />
+            <span class="book-title">Crazy Rich Asians</span>
+            <span class="book-author">Kevin Kwan</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/8352502-L.jpg" alt="Cover of The Giver" loading="lazy" />
+            <span class="book-title">The Giver</span>
+            <span class="book-author">Lois Lowry</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/10454502-L.jpg" alt="Cover of Gathering Blue" loading="lazy" />
+            <span class="book-title">Gathering Blue</span>
+            <span class="book-author">Lois Lowry</span>
+          </div>
+          <div class="book-card">
+            <img class="book-cover" src="https://covers.openlibrary.org/b/id/7418786-L.jpg" alt="Cover of The Fault in Our Stars" loading="lazy" />
+            <span class="book-title">The Fault in Our Stars</span>
+            <span class="book-author">John Green</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <span class="ring-mark small" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 64 64"><circle cx="33" cy="30" r="27" fill="none" stroke="var(--marigold)" stroke-width="3"/><circle cx="31" cy="32" r="13" fill="none" stroke="var(--teal)" stroke-width="3"/></svg>
+          </span>
+          Robert Gama
+        </div>
+        <div class="footer-links">
+          <a href="mailto:RGama28@cmc.edu">RGama28@cmc.edu</a>
+          <a href="https://www.linkedin.com/in/robertgamajr" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="Robert-Gama-Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        </div>
+        <div class="footer-copy" id="footerCopy"></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
